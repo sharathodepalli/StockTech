@@ -73,3 +73,4 @@ const DataTable = ({ data, onSort, sortKey, sortOrder }) => {
 };
 
 export default DataTable;
+

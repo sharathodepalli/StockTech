@@ -8,7 +8,7 @@ const fetchFilteredData = async (filters, setLoading, setData, setError) => {
       throw new Error("Required filters are missing.");
     }
 
-    const API_URL = process.env.REACT_APP_API_URL;
+    const API_URL = process.env.REACT_APP_API_BASE_URL;
 
     const response = await axios.get(`${API_URL}/filter-data`, {
       params: {
