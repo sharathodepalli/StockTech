@@ -1,5 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+//import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 import FilterForm from "./components/FilterForm";
 
 const App = () => {
@@ -7,8 +9,8 @@ const App = () => {
 
   // Environment Variables
   const THEME_KEY = process.env.REACT_APP_THEME_KEY || "theme";
-  const APP_TITLE = process.env.REACT_APP_APP_TITLE || "Default App Title";
-  const LOGO_PATH = `${process.env.PUBLIC_URL}/${process.env.REACT_APP_LOGO || "logo.png"}`;
+  const APP_TITLE = process.env.REACT_APP_APP_TITLE || "StockTech";
+  const LOGO_PATH = `${process.env.PUBLIC_URL}/${process.env.REACT_APP_LOGO || "financial-profit.png"}`;
 
   useEffect(() => {
     const storedTheme = localStorage.getItem(THEME_KEY) || "light";

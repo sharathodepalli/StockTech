@@ -4,7 +4,7 @@ import requests
 import os
 from dotenv import load_dotenv
 
-# Specify the path to the .env file in the root directory
+
 load_dotenv(dotenv_path="../.env")
 
 
